@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -66,13 +67,15 @@ const Navbar = () => {
       <nav className={`navbar ${isSticky ? 'navbar-expanded' : ''} ${isScrolled ? 'scrolled' : ''}`}>
         <div className={`nav-container ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <div className="nav-brand">
-            <img src="/img/smartrlogo.svg" alt="Smartr365" className="logo-svg" />
+            <Link to="/">
+              <img src="/img/smartrlogo.svg" alt="Smartr365" className="logo-svg" />
+            </Link>
           </div>
           <div className="nav-menu">
             <a href="#" className="nav-link">Platform</a>
             <a href="#" className="nav-link">Solutions</a>
             <a href="#" className="nav-link">Resources</a>
-            <a href="#" className="nav-link">Pricing</a>
+            <Link to="/pricing" className="nav-link">Pricing</Link>
             <a href="#" className="nav-link">Company</a>
           </div>
           <div className="nav-buttons">
@@ -96,7 +99,7 @@ const Navbar = () => {
               <a href="#" className="mobile-nav-link" onClick={closeMobileMenu}>Platform</a>
               <a href="#" className="mobile-nav-link" onClick={closeMobileMenu}>Solutions</a>
               <a href="#" className="mobile-nav-link" onClick={closeMobileMenu}>Resources</a>
-              <a href="#" className="mobile-nav-link" onClick={closeMobileMenu}>Pricing</a>
+              <Link to="/pricing" className="mobile-nav-link" onClick={closeMobileMenu}>Pricing</Link>
               <a href="#" className="mobile-nav-link" onClick={closeMobileMenu}>Company</a>
             </nav>
             

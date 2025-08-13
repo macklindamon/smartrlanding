@@ -14,7 +14,8 @@
     "@lottiefiles/react-lottie-player": "^3.6.0",
     "lottie-web": "^5.13.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.8.0"
   },
   "devDependencies": {
     "@azure/static-web-apps-cli": "^2.0.6",

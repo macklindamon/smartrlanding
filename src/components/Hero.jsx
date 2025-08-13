@@ -1,6 +1,6 @@
 import React from 'react';
 import TypewriterText from './TypewriterText';
-import TabbedLottieSection from './TabbedLottieSection';
+import ArcadeEmbed from './ArcadeEmbed';
 
 const Hero = () => {
   const typewriterTexts = [
@@ -29,7 +29,7 @@ const Hero = () => {
                 <span>New update</span>
               </div>
               <div className="update-content">
-                <span>SmartrFlow is here</span>
+                <span>SmartSearch is here</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="arrow-icon">
                   <path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
@@ -51,9 +51,9 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Tabbed Lottie Animation Section */}
-          <div className="lottie-section">
-            <TabbedLottieSection />
+          {/* Arcade Demo Section */}
+          <div className="arcade-section">
+            <ArcadeEmbed />
           </div>
           
           {/* Trust Indicators */}
