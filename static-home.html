@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartr365 - All-in-one Mortgage Broker CRM</title>
+  <link rel="icon" href="/img/smartrlogo.svg">
+  <style>
+    /* Inline main styles for crawlability */
+    /* ...existing CSS from styles.css (first 100 lines for brevity)... */
+    :root {
+      --color-primary: rgb(0, 113, 239);
+      --color-background: rgb(255, 255, 255);
+      --color-circle: rgb(219, 236, 255);
+      --color-black: rgb(0, 0, 0);
+      --color-white: rgb(255, 255, 255);
+      --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-size-hero: 73px;
+      --font-size-subtitle: 24px;
+      --font-size-nav: 16px;
+      --font-size-button: 16px;
+      --font-weight-normal: 400;
+      --font-weight-semibold: 600;
+      line-height: 1.2;
+      color: var(--color-black);
+      background: var(--color-background);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    *, *::before, *::after { font-family: var(--font-family); }
+    input, button, textarea, select { font-family: var(--font-family); }
+    #root { font-family: var(--font-family); }
+    .navbar { position: fixed; top: 20px; z-index: 1000; width: 100vw; height: auto; transition: all .4s cubic-bezier(.4,0,.2,1); }
+    .nav-container { width: 1190px; margin: 0 auto; border-radius: 30px; padding: 16px 15px; display: flex; justify-content: space-between; align-items: center; height: auto; background: var(--color-white); box-shadow: 0 8px 32px #0071ef26; transition: all .4s cubic-bezier(.4,0,.2,1); }
+    .nav-brand { grid-column: 1; justify-self: start; }
+    .nav-buttons { grid-column: 3; justify-self: end; }
+    /* ...add more styles as needed for full homepage fidelity... */
+    .main-content { padding-top: 120px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .hero-content-center { text-align: center; margin-bottom: 48px; }
+    h1 { font-size: 73px; font-weight: 700; margin-bottom: 16px; }
+    .description { font-size: 24px; color: #555; margin-bottom: 32px; }
+    .button-group { display: flex; gap: 16px; justify-content: center; margin-bottom: 32px; }
+    .btn { padding: 16px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; border: none; cursor: pointer; }
+    .btn-primary { background: var(--color-primary); color: white; }
+    .btn-secondary { background: #e5e7eb; color: #0071ef; }
+    .trust-indicators { display: flex; gap: 24px; justify-content: center; margin-top: 32px; }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 16px; color: #333; }
+    .trust-icon { width: 20px; height: 20px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="/img/smartrlogo.svg" alt="Smartr365 Logo" style="height:40px;">
+      </div>
+      <div class="nav-buttons">
+        <a href="/pricing" class="btn btn-secondary">Pricing</a>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+  <main class="main-content">
+    <div class="container">
+      <div class="hero-content-center">
+        <div class="update-banner">
+          <span class="update-badge">New update</span>
+          <span class="update-content">SmartSearch is here</span>
+        </div>
+        <h1>Save hours on admin<br>with <strong>Smartr365</strong></h1>
+        <p class="description">Join the most extensive mortgage & protection platform in the UK</p>
+        <div class="button-group">
+          <a href="#" class="btn btn-primary btn-large">Get started for FREE</a>
+          <a href="#" class="btn btn-secondary btn-large">Book a demo</a>
+        </div>
+        <div class="trust-indicators">
+          <div class="trust-item"><img src="/img/star.svg" alt="Star" class="trust-icon">99.9% uptime SLA</div>
+          <div class="trust-item"><img src="/img/star.svg" alt="Star" class="trust-icon">GDPR Compliant</div>
+          <div class="trust-item"><img src="/img/star.svg" alt="Star" class="trust-icon">Cloud based</div>
+          <div class="trust-item"><img src="/img/star.svg" alt="Star" class="trust-icon">Dedicated support</div>
+          <div class="trust-item"><img src="/img/star.svg" alt="Star" class="trust-icon">ISO 27001 certified</div>
+        </div>
+      </div>
+      <!-- Add more homepage sections here as needed -->
+    </div>
+  </main>
+</body>
+</html>
