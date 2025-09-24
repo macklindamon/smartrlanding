@@ -9,6 +9,14 @@ import SaaSAnalytics, { WhyBrokersLoveSmartr, SolutionsForEachStep, AnimatedRevi
 import FeatureStepsCarousel from './components/FeatureStepsCarousel'
 import Carousel from './components/Carousel'
 import Pricing from './components/Pricing'
+import TabbedCardSection from './components/TabbedCardSection'
+import AgenticCS from './components/AgenticCS'
+import CaseStudies from './components/CaseStudies'
+import CaseStudyDetail from './components/CaseStudyDetail'
+import Videos from './components/Videos'
+import TeamDetail from './components/TeamDetail'
+import Team from './components/Team'
+import PlatformFeature from './components/PlatformFeature'
 import './styles.css'
 import Footer from './components/Footer'
 import CookieConsent from './components/CookieConsent'
@@ -21,10 +29,10 @@ function HomePage() {
       <BrandsTicker />
       <Stats />
       <SaaSAnalytics />
-      <SolutionsForEachStep />
+      <AgenticCS />
+      <TabbedCardSection />
       <WhyBrokersLoveSmartr />
       <AnimatedReviews />
-
     </>
   )
 }
@@ -37,6 +45,12 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/platform/:slug" element={<PlatformFeature />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
+        <Route path="/campaigns/bucket-list/" element={<Videos />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/team/:slug" element={<TeamDetail />} />
         <Route path="/cookies" element={<CookiePolicy />} />
       </Routes>
       <Footer />

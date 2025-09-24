@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import AgenticCS from './AgenticCS';
 // Services Section (Sonovate-style)
 
 export const ServicesSection = () => (
@@ -8,7 +9,7 @@ export const ServicesSection = () => (
       <h2 className="services-title">Smartr365’s services let you focus on your clients rather than admin</h2>
       <div className="services-cards">
         <div className="service-card">
-          <div className="service-icon" style={{background: '#00E1FF'}}>
+          <div className="service-icon">
             <svg width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#00E1FF"/><path d="M8 24V10h16v14" stroke="#222" strokeWidth="2" strokeLinejoin="round"/><path d="M12 18v-4M16 20v-6M20 22v-8" stroke="#222" strokeWidth="2" strokeLinecap="round"/></svg>
           </div>
           <div className="service-title">Save time</div>
@@ -16,7 +17,7 @@ export const ServicesSection = () => (
           <a href="#" className="service-link">Learn more</a>
         </div>
         <div className="service-card">
-          <div className="service-icon" style={{background: '#00E1B2'}}>
+          <div className="service-icon">
             <svg width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#00E1B2"/><path d="M10 16h12M16 10v12" stroke="#222" strokeWidth="2" strokeLinecap="round"/></svg>
           </div>
           <div className="service-title">Funding</div>
@@ -24,7 +25,7 @@ export const ServicesSection = () => (
           <a href="#" className="service-link">Explore funding</a>
         </div>
         <div className="service-card">
-          <div className="service-icon" style={{background: '#FFD600'}}>
+          <div className="service-icon">
             <svg width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#FFD600"/><text x="16" y="21" textAnchor="middle" fontSize="16" fill="#222">£</text></svg>
           </div>
           <div className="service-title">Payments</div>
@@ -282,7 +283,7 @@ export const WhyBrokersLoveSmartr = () => {
                     <polygon points="10,8 22,14 10,20" fill="#fff" />
                   </svg>
                 </span>
-                <span className="why-love-video-text" style={{fontSize: '1.15rem', fontWeight: 700, color: '#222'}}>
+                <span className="why-love-video-text">
                   Listen to why {names[currentImageIndex]} love's Smartr365
                 </span>
               </div>
@@ -331,7 +332,7 @@ export const WhyBrokersLoveSmartr = () => {
                             <polygon points="10,8 22,14 10,20" fill="#fff" />
                           </svg>
                         </span>
-                        <span className="why-love-video-text" style={{fontSize: '1.15rem', fontWeight: 700, color: '#222'}}>
+                        <span className="why-love-video-text">
                           Listen to why {names[index]} love's Smartr365
                         </span>
                       </div>
@@ -490,20 +491,11 @@ export const SolutionsForEachStep = () => {
   const touchEndX = useRef(0);
 
   const solutions = [
-    {
-      subheader: "Top Tier Lenders",
-      title: "SmartrConnect",
-      paragraph: "Connect directly with Halifax, NatWest, Nationwide, Barclays, and regional lenders like Darlington and Leeds. Smartr365 simplifies sourcing, comparisons and applications, ensuring clients get the best mortgage products faster."
-    },
+
      {
       subheader: "Automate Tasks",
       title: "Smartflow",
       paragraph: "Our workflow tool reduces manual admin, improves accuracy and speeds up case progression. Advisers gain more client time, streamlined processes, and fewer errors, helping them focus on advice instead of paperwork."
-    },
-     {
-      subheader: "Client journey",
-      title: "HomeBuyer",
-      paragraph: "Guide first-time buyers and movers from affordability through to completion. Smartr365's HomeBuyer experience brings clarity, reassurance and simple digital tools that support every step towards owning a home."
     },
     {
       subheader: "Client loyalty",
@@ -605,7 +597,14 @@ export const SolutionsForEachStep = () => {
   return (
     <section className="solutions-carousel-section">
       <div className="solutions-carousel-container">
-        <h2 className="section-title" style={{ textAlign: 'center' }}>Solutions for every step of the mortgage journey</h2>
+        <div className="section-subtitle">Platform</div>
+        <h2 className="section-title">Solutions for every step of the mortgage journey</h2>
+        <p className="section-description">
+          Our platform supports the full mortgage journey from lead capture to completion, giving brokers efficient tools to manage cases, ensure compliance, and deliver a smoother experience for every client.
+        </p>
+        
+        {/* AgenticCS section integrated under the title */}
+
         
         <div className="solutions-carousel-wrapper">
           <div 

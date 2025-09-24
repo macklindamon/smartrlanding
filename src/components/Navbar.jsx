@@ -9,21 +9,21 @@ const Navbar = () => {
   const [isPlatformDropdownOpen, setIsPlatformDropdownOpen] = useState(false);
   const [isMobilePlatformOpen, setIsMobilePlatformOpen] = useState(false);
   const platformBtnRef = useRef(null);
-  const [dropdownPos, setDropdownPos] = useState({ top: 0, left: 0 });
-  const DROPDOWN_WIDTH = 900;
+  const [dropdownPos, setDropdownPos] = useState({ top: -9999, left: -9999 }); // Start off-screen
+  const DROPDOWN_WIDTH = 550;
 
   // Solutions dropdown state
   const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false);
   const [isMobileSolutionsOpen, setIsMobileSolutionsOpen] = useState(false);
   const solutionsBtnRef = useRef(null);
-  const [solutionsPos, setSolutionsPos] = useState({ top: 0, left: 0 });
-  const SOLUTIONS_WIDTH = 760;
+  const [solutionsPos, setSolutionsPos] = useState({ top: -9999, left: -9999 }); // Start off-screen
+  const SOLUTIONS_WIDTH = 550;
 
   // Resources dropdown state
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false);
   const [isMobileResourcesOpen, setIsMobileResourcesOpen] = useState(false);
   const resourcesBtnRef = useRef(null);
-  const [resourcesPos, setResourcesPos] = useState({ top: 0, left: 0 });
+  const [resourcesPos, setResourcesPos] = useState({ top: -9999, left: -9999 }); // Start off-screen
   const RESOURCES_WIDTH = 550;
 
   const isMobile = () => window.innerWidth <= 900;
@@ -219,48 +219,56 @@ const Navbar = () => {
               {createPortal(
                 <div
                   className={`platform-dropdown portal ${isPlatformDropdownOpen ? 'visible' : 'hidden'}`}
-                  style={{ position: 'fixed', top: dropdownPos.top, left: dropdownPos.left, width: DROPDOWN_WIDTH }}
+                  style={{ position: 'fixed', top: dropdownPos.top, left: dropdownPos.left, width: 900 }}
                   onMouseEnter={openPlatformDropdown}
                   onMouseLeave={closePlatformDropdown}
                 >
-                  <div className="dropdown-container">
+                  <div className="dropdown-container-3col">
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown-section-header">
                           <h3 className="dropdown-section-title">Platform</h3>
                         </div>
-                        <div className="dropdown-item">
+                        <Link to="/platform/smartrconnect" className="dropdown-item">
                           <div className="dropdown-item-title">SmartrConnect <span className="dropdown-arrow">›</span></div>
                           <div className="dropdown-item-desc">Direct access to top lenders</div>
-                        </div>
-                        <div className="dropdown-item">
+                        </Link>
+                        <Link to="/platform/smartflow" className="dropdown-item">
                           <div className="dropdown-item-title">Smartflow <span className="dropdown-arrow">›</span></div>
                           <div className="dropdown-item-desc">Automating workflows for faster cases</div>
-                        </div>
-                        <div className="dropdown-item">
+                        </Link>
+                        <Link to="/platform/homebuyer" className="dropdown-item">
                           <div className="dropdown-item-title">HomeBuyer <span className="dropdown-arrow">›</span></div>
                           <div className="dropdown-item-desc">Fact Find app for clients</div>
-                        </div>
-                        <div className="dropdown-item">
+                        </Link>
+                        <Link to="/platform/smartrretain" className="dropdown-item">
                           <div className="dropdown-item-title">SmartrRetain <span className="dropdown-arrow">›</span></div>
                           <div className="dropdown-item-desc">Automated touchpoints with clients</div>
+                        </Link>
+                      </div>
+                    </div>
+
+                    <div className="dropdown-column">
+                      <div className="dropdown-section">
+                        <div className="dropdown-section-header">
+                          <h3 className="dropdown-section-title">&nbsp;</h3>
                         </div>
-                        <div className="dropdown-item">
+                        <Link to="/platform/introducer-portal" className="dropdown-item">
                           <div className="dropdown-item-title">Introducer portal <span className="dropdown-arrow">›</span></div>
                           <div className="dropdown-item-desc">Streamlined lead capture and conversion</div>
-                        </div>
-                        <div className="dropdown-item">
+                        </Link>
+                        <Link to="/platform/protection" className="dropdown-item">
                           <div className="dropdown-item-title">Protection <span className="dropdown-arrow">›</span></div>
                           <div className="dropdown-item-desc">Integrated cover within every case</div>
-                        </div>
-                        <div className="dropdown-item">
+                        </Link>
+                        <Link to="/platform/admin" className="dropdown-item">
                           <div className="dropdown-item-title">Admin <span className="dropdown-arrow">›</span></div>
                           <div className="dropdown-item-desc">Simplify compliance and daily operations</div>
-                        </div>
-                        <div className="dropdown-item">
+                        </Link>
+                        <Link to="/platform/sourcing" className="dropdown-item">
                           <div className="dropdown-item-title">Sourcing <span className="dropdown-arrow">›</span></div>
                           <div className="dropdown-item-desc">Integrated systems for sourcing</div>
-                        </div>
+                        </Link>
                       </div>
                     </div>
 
@@ -321,10 +329,10 @@ const Navbar = () => {
                         <div className="dropdown-section-header">
                           <h3 className="dropdown-section-title">Solutions</h3>
                         </div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">For Advisers <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">For Admins <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">For Managers <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">For Networks / Clubs <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Advisers <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Comprehensive tools for mortgage advisers</div></a>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Admins <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Streamline administrative processes</div></a>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Managers <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Management tools and insights</div></a>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Networks / Clubs <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Solutions for broker networks</div></a>
                       </div>
                     </div>
                     <div className="dropdown-column">
@@ -332,9 +340,9 @@ const Navbar = () => {
                         <div className="dropdown-section-header" style={{visibility:'hidden'}}>
                           <h3 className="dropdown-section-title">Solutions</h3>
                         </div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">For Homebuyers <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">For Estate Agents <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">For Homebuilders <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Homebuyers <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Tools to help homebuyers navigate mortgages</div></a>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Estate Agents <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Integrate mortgage services seamlessly</div></a>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Homebuilders <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Support new build mortgage processes</div></a>
                       </div>
                     </div>
                   </div>
@@ -375,10 +383,10 @@ const Navbar = () => {
                         <div className="dropdown-section-header">
                           <h3 className="dropdown-section-title">Resources</h3>
                         </div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">Case Studies <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">Partners <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">Blog <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">Help Center <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
+                        <Link to="/case-studies" className="dropdown-item"><div className="dropdown-item-title">Case Studies <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Real-world success stories.</div></Link>
+                        <Link to="/campaigns/bucket-list/" className="dropdown-item"><div className="dropdown-item-title">Videos <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Watch our latest content</div></Link>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">Partners <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Our trusted partnerships</div></a>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">Blog <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Industry insights and updates</div></a>
                       </div>
                     </div>
                     <div className="dropdown-column">
@@ -386,9 +394,11 @@ const Navbar = () => {
                         <div className="dropdown-section-header" style={{visibility:'hidden'}}>
                           <h3 className="dropdown-section-title">Resources</h3>
                         </div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">API Docs <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">Team <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
-                        <div className="dropdown-item"><div className="dropdown-item-title">Company <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">Help Center <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Get support and guidance</div></a>
+                        <a href="https://api.smartr365.com/" target="_blank" rel="noopener noreferrer" className="dropdown-item"><div className="dropdown-item-title">API Docs <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Developer documentation and API reference.</div></a>
+                        <Link to="/team" className="dropdown-item"><div className="dropdown-item-title">Team <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Meet our passionate team members.</div></Link>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">Company <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Learn about our mission</div></a>
+                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">Contact <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Get in touch with us</div></a>
                         <div className="dropdown-item"><div className="dropdown-item-title">Contact <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
                       </div>
                     </div>
@@ -500,12 +510,13 @@ const Navbar = () => {
               {isMobileResourcesOpen && (
                 <div id="mobile-resources-panel" className="mobile-submenu">
                   <div className="mobile-submenu-section">
-                    <button className="mobile-submenu-item" onClick={closeMobileMenu}>Case Studies</button>
+                    <Link to="/case-studies" className="mobile-submenu-item" onClick={closeMobileMenu}>Case Studies</Link>
+                    <Link to="/campaigns/bucket-list/" className="mobile-submenu-item" onClick={closeMobileMenu}>Videos</Link>
                     <button className="mobile-submenu-item" onClick={closeMobileMenu}>Partners</button>
                     <button className="mobile-submenu-item" onClick={closeMobileMenu}>Blog</button>
                     <button className="mobile-submenu-item" onClick={closeMobileMenu}>Help Center</button>
-                    <button className="mobile-submenu-item" onClick={closeMobileMenu}>API Docs</button>
-                    <button className="mobile-submenu-item" onClick={closeMobileMenu}>Team</button>
+                    <a href="https://api.smartr365.com/" target="_blank" rel="noopener noreferrer" className="mobile-submenu-item" onClick={closeMobileMenu}>API Docs</a>
+                    <Link to="/team" className="mobile-submenu-item" onClick={closeMobileMenu}>Team</Link>
                     <button className="mobile-submenu-item" onClick={closeMobileMenu}>Company</button>
                     <button className="mobile-submenu-item" onClick={closeMobileMenu}>Contact</button>
                   </div>

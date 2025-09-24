@@ -9,7 +9,6 @@ const TabbedLottieSection = () => {
     { 
       id: 'CasesClients', 
       label: 'Cases & Clients',
-      subtitle: 'All data in one view',
       icon: '/img/cases-clients.svg'
     },
     { 
@@ -108,7 +107,6 @@ const TabbedLottieSection = () => {
             <img src={tab.icon} alt={tab.label} className="tab-icon" />
             <div className="tab-content">
               <span className="tab-label">{tab.label}</span>
-              <span className="tab-subtitle">{tab.subtitle}</span>
             </div>
           </button>
         ))}

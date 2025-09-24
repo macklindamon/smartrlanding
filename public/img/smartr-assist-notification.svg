@@ -1,0 +1,29 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Card Background -->
+  <rect x="90" y="130" width="620" height="340" rx="24" fill="white" stroke="#E5E7EB" stroke-width="1"/>
+  
+  <!-- Header -->
+  <text x="158" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#0071EF">Smartr Assist</text>
+  
+  <!-- Close Button -->
+  <g transform="translate(650, 160)">
+    <circle cx="15" cy="15" r="15" fill="#E5E7EB"/>
+    <path d="M10 10 L20 20 M20 10 L10 20" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Main Text -->
+  <text x="158" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#1F2937">Your case for </text>
+  <text x="275" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#1F2937">Sarah Jones</text>
+  <text x="402" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#1F2937"> has</text>
+  
+  <text x="158" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#1F2937">no fact find invite sent within 48</text>
+  
+  <text x="158" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#1F2937">hours. Send the invite now to</text>
+  
+  <text x="158" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#1F2937">keep the application on track.</text>
+  
+  <!-- Button -->
+  <rect x="410" y="370" width="220" height="60" rx="30" fill="#0071EF"/>
+  <text x="505" y="407" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="white" text-anchor="middle">Send invite</text>
+  <path d="M540 405 L550 400 L540 395" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
