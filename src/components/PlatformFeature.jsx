@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getPlatformFeatureBySlug } from '../data/platformFeatures';
+import CustomerQuote from './CustomerQuote';
+import { getRandomQuote } from '../data/customerQuotes';
 
 const PlatformFeature = () => {
   const { slug } = useParams();
@@ -27,9 +29,6 @@ const PlatformFeature = () => {
         <div className="container">
           <div className="platform-feature-hero-content">
             <div className="platform-feature-hero-text">
-              <div className="platform-feature-breadcrumb">
-                <Link to="/">Home</Link> / <Link to="/#platform">Platform</Link> / <span>{feature.title}</span>
-              </div>
               <h1 className="platform-feature-title">{feature.title}</h1>
               <p className="platform-feature-subtitle">{feature.subtitle}</p>
               <p className="platform-feature-description">{feature.description}</p>
@@ -73,11 +72,22 @@ const PlatformFeature = () => {
               <div key={index} className="platform-benefit-card">
                 <h3>{benefit.title}</h3>
                 <p>{benefit.description}</p>
+                <div className="platform-benefit-read-more">
+                  <span>Read more</span>
+                  <div className="learn-more-arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Customer Quote */}
+      <CustomerQuote {...getRandomQuote()} />
 
       {/* CTA Section */}
       <section className="platform-feature-cta">

@@ -115,9 +115,11 @@ export const WhyBrokersLoveSmartr = () => {
   ];
   
   // Use mobile-specific images on mobile, regular images on tablet/desktop
-  const imageUrls = baseImageUrls.map(url => 
-    isMobile ? `${url}.png` : `${url}.png`
-  );
+  const imageUrls = baseImageUrls.map((url, index) => {
+    // aisha-office and helen-office use .jpg, others use .png
+    const extension = (url.includes('aisha-office') || url.includes('helen-office')) ? '.jpg' : '.png';
+    return isMobile ? `${url}${extension}` : `${url}${extension}`;
+  });
   
   const names = [
     'Richard',

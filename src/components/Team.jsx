@@ -23,6 +23,17 @@ const Team = () => {
                   <div className="team-info">
                     <h3 className="team-name">{member.name}</h3>
                     <p className="team-role">{member.role}</p>
+                    <p className="team-bio-preview">
+                      {member.bio.split(' ').slice(0, 10).join(' ')}...
+                    </p>
+                    <div className="team-read-more">
+                      <span>Read more</span>
+                      <div className="learn-more-arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </Link>
               </div>

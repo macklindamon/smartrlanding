@@ -135,9 +135,14 @@ const TabbedCardSection = () => {
                   <p className="card-placeholder-text">
                     {tabsData[activeTab].details}
                   </p>
-                  <button className="card-cta">
-                    Learn more →
-                  </button>
+                  <div className="card-read-more">
+                    <span>Learn more</span>
+                    <div className="learn-more-arrow">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

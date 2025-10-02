@@ -135,6 +135,14 @@ const AgenticCS = () => {
             <p className="platform-card-description">
               Guide first-time buyers and movers from affordability through to completion. Smartr365's HomeBuyer experience brings clarity, reassurance and simple digital tools that support every step towards owning a home.
             </p>
+            <div className="platform-card-read-more">
+              <span>Read more</span>
+              <div className="learn-more-arrow">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </div>
           </div>
 
           {/* SmartrConnect Card with Dark Blue Callout */}
@@ -146,9 +154,17 @@ const AgenticCS = () => {
             <h2 className="platform-card-title">
               Top tier lenders
             </h2>
-            <p className="platform-card-description">
-              Connect directly with Halifax, NatWest, Nationwide, Barclays, and regional lenders like Darlington and Leeds. Smartr365 simplifies sourcing, comparisons and applications, ensuring clients get the best mortgage products faster.
+                        <p className="platform-card-description">
+              Connect to 60+ lenders instantly.
             </p>
+            <div className="platform-card-read-more">
+              <span>Read more</span>
+              <div className="learn-more-arrow">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>

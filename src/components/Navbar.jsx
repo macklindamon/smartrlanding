@@ -279,8 +279,13 @@ const Navbar = () => {
                         </div>
                         <h4 className="dropdown-card-title">Introducing Agentic CS</h4>
                         <p className="dropdown-card-para">Real-time mortgage tracking with alerts on tasks and opportunities</p>
-                        <a href="#" className="dropdown-card-link">
-                          Learn more →
+                        <a href="#" className="dropdown-card-link dropdown-learn-more">
+                          Learn more
+                          <div className="dropdown-learn-more-arrow">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                              <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                          </div>
                         </a>
                         <div className="dropdown-card-image">
                           <img
@@ -394,12 +399,12 @@ const Navbar = () => {
                         <div className="dropdown-section-header" style={{visibility:'hidden'}}>
                           <h3 className="dropdown-section-title">Resources</h3>
                         </div>
-                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">Help Center <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Get support and guidance</div></a>
-                        <a href="https://api.smartr365.com/" target="_blank" rel="noopener noreferrer" className="dropdown-item"><div className="dropdown-item-title">API Docs <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Developer documentation and API reference.</div></a>
+                        <a href="https://support.smartr365.com/" target="_blank" rel="noopener noreferrer" className="dropdown-item"><div className="dropdown-item-title">Help Center <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Get support and guidance</div></a>
+                        <a href="https://api.smartr365.com/" target="_blank" rel="noopener noreferrer" className="dropdown-item"><div className="dropdown-item-title">API Docs <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Developer API documentation</div></a>
                         <Link to="/team" className="dropdown-item"><div className="dropdown-item-title">Team <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Meet our passionate team members.</div></Link>
-                        <a href="#" className="dropdown-item"><div className="dropdown-item-title">Company <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Learn about our mission</div></a>
+                        <Link to="/company" className="dropdown-item"><div className="dropdown-item-title">Company <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Learn about our mission</div></Link>
                         <a href="#" className="dropdown-item"><div className="dropdown-item-title">Contact <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Get in touch with us</div></a>
-                        <div className="dropdown-item"><div className="dropdown-item-title">Contact <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Lorem ipsum dolor sit amet.</div></div>
+                        <a href="https://status.smartr365.com/" target="_blank" rel="noopener noreferrer" className="dropdown-item"><div className="dropdown-item-title">System Status <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Check our platform status</div></a>
                       </div>
                     </div>
                   </div>

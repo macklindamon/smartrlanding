@@ -16,6 +16,7 @@ import CaseStudyDetail from './components/CaseStudyDetail'
 import Videos from './components/Videos'
 import TeamDetail from './components/TeamDetail'
 import Team from './components/Team'
+import Company from './components/Company'
 import PlatformFeature from './components/PlatformFeature'
 import './styles.css'
 import Footer from './components/Footer'
@@ -51,6 +52,7 @@ function App() {
         <Route path="/campaigns/bucket-list/" element={<Videos />} />
         <Route path="/team" element={<Team />} />
         <Route path="/team/:slug" element={<TeamDetail />} />
+        <Route path="/company" element={<Company />} />
         <Route path="/cookies" element={<CookiePolicy />} />
       </Routes>
       <Footer />
