@@ -2,24 +2,14 @@
   "routes": [
     {
       "route": "/*",
-      "serve": "/index.html",
-      "statusCode": 200
+      "rewrite": "/index.html"
     }
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/img/*", "/assets/*", "*.{css,scss,js,png,gif,ico,jpg,svg}"]
+    "exclude": ["/img/*", "*.{css,scss,js,png,gif,ico,jpg,svg}"]
   },
   "mimeTypes": {
     ".json": "application/json"
-  },
-  "globalHeaders": {
-    "Cache-Control": "no-cache"
-  },
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/index.html",
-      "statusCode": 200
-    }
   }
 }
