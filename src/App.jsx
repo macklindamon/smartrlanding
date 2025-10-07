@@ -45,7 +45,7 @@ function App() {
         <Navbar />
       </header>
       <CookieConsent />
-      <main role="main">
+      <main role="main" aria-label="Main content">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/pricing" element={<Pricing />} />

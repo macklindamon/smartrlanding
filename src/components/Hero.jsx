@@ -13,7 +13,7 @@ const Hero = () => {
   ];
 
   return (
-    <main className="main-content">
+    <section className="main-content" role="banner" aria-label="Hero section">
       <div className="container">
         <div className="content-layout">
           {/* Centered Hero Content */}
@@ -81,7 +81,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
