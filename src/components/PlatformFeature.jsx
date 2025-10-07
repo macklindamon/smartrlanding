@@ -33,8 +33,8 @@ const PlatformFeature = () => {
               <p className="platform-feature-subtitle">{feature.subtitle}</p>
               <p className="platform-feature-description">{feature.description}</p>
               <div className="platform-feature-cta">
-                <button className="btn btn-primary">Get Started</button>
-                <button className="btn btn-secondary">Book Demo</button>
+                <button className="btn btn-primary" aria-label="Get started with this platform feature">Get Started</button>
+                <button className="btn btn-secondary" aria-label="Book a demo for this platform feature">Book Demo</button>
               </div>
             </div>
             <div className="platform-feature-hero-image">
@@ -96,8 +96,8 @@ const PlatformFeature = () => {
             <h2>Ready to get started with {feature.title}?</h2>
             <p>Join thousands of mortgage professionals who trust our platform</p>
             <div className="platform-cta-buttons">
-              <button className="btn btn-primary">Start Free Trial</button>
-              <Link to="/pricing" className="btn btn-secondary">View Pricing</Link>
+              <button className="btn btn-primary" aria-label="Start free trial of this platform feature">Start Free Trial</button>
+              <Link to="/pricing" className="btn btn-secondary" aria-label="View pricing for platform features">View Pricing</Link>
             </div>
           </div>
         </div>

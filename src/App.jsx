@@ -41,20 +41,24 @@ function HomePage() {
 function App() {
   return (
     <Router>
-      <Navbar />
+      <header role="banner">
+        <Navbar />
+      </header>
       <CookieConsent />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/platform/:slug" element={<PlatformFeature />} />
-        <Route path="/case-studies" element={<CaseStudies />} />
-        <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
-        <Route path="/campaigns/bucket-list/" element={<Videos />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/team/:slug" element={<TeamDetail />} />
-        <Route path="/company" element={<Company />} />
-        <Route path="/cookies" element={<CookiePolicy />} />
-      </Routes>
+      <main role="main">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/platform/:slug" element={<PlatformFeature />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
+          <Route path="/campaigns/bucket-list/" element={<Videos />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/team/:slug" element={<TeamDetail />} />
+          <Route path="/company" element={<Company />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
+        </Routes>
+      </main>
       <Footer />
     </Router>
   )

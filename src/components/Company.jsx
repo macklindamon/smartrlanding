@@ -63,8 +63,8 @@ const Company = () => {
             <h2>Ready to get started?</h2>
             <p>Join thousands of mortgage professionals who trust our platform</p>
             <div className="company-cta-buttons">
-              <button className="btn btn-primary">Book a demo</button>
-              <button className="btn btn-secondary">Get started for FREE</button>
+              <button className="btn btn-primary" aria-label="Book a demo with Smartr365">Book a demo</button>
+              <button className="btn btn-secondary" aria-label="Get started with Smartr365 for free">Get started for FREE</button>
             </div>
           </div>
         </div>

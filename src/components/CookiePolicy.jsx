@@ -2,8 +2,8 @@ import React from 'react';
 
 const CookiePolicy = () => {
   return (
-    <main className="policy-page" role="main">
-      <div className="policy-container">
+    <main className="policy-container" role="main">
+      <div>
         <h1>Cookie Policy</h1>
         <p>
           We use cookies to enhance site navigation, analyze site usage, and assist in our marketing efforts. This page explains

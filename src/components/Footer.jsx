@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="site-footer" role="contentinfo">
+    <footer className="site-footer" role="contentinfo" aria-label="Site footer">
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand">
@@ -35,7 +35,8 @@ const Footer = () => {
 
             <div className="footer-col">
               <h4 className="footer-heading">Follow us</h4>
-              <ul className="footer-links social">
+              <nav aria-label="Social media links">
+                <ul className="footer-links social">
                 <li>
                   <a className="footer-link" href="https://www.linkedin.com/company/smartr365/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -53,6 +54,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
+              </nav>
             </div>
           </div>
         </div>

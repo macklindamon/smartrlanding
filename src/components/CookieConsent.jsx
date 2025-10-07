@@ -37,7 +37,7 @@ const CookieConsent = () => {
           <Link to="/cookies" className="cookie-consent__learn">
             Learn more <span aria-hidden>→</span>
           </Link>
-          <button type="button" className="btn btn-primary" onClick={acceptAll}>
+          <button type="button" className="btn btn-primary" onClick={acceptAll} aria-label="Accept all cookies">
             Accept All Cookies
           </button>
         </div>

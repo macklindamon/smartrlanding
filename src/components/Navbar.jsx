@@ -187,7 +187,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`navbar ${isSticky ? 'navbar-expanded' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+      <nav className={`navbar ${isSticky ? 'navbar-expanded' : ''} ${isScrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Primary navigation">
         <div className={`nav-container ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <div className="nav-brand">
             <Link to="/">
@@ -208,6 +208,7 @@ const Navbar = () => {
                 onClick={() => setIsMobilePlatformOpen((v) => !v)}
                 aria-haspopup="true"
                 aria-expanded={isPlatformDropdownOpen || isMobilePlatformOpen}
+                aria-label="Platform navigation menu"
               >
                 Platform
                 <span className="chevron" aria-hidden="true">
@@ -313,6 +314,7 @@ const Navbar = () => {
                 onClick={() => setIsMobileSolutionsOpen((v) => !v)}
                 aria-haspopup="true"
                 aria-expanded={isSolutionsDropdownOpen || isMobileSolutionsOpen}
+                aria-label="Solutions navigation menu"
               >
                 Solutions
                 <span className="chevron" aria-hidden="true">
@@ -367,6 +369,7 @@ const Navbar = () => {
                 onClick={() => setIsMobileResourcesOpen((v) => !v)}
                 aria-haspopup="true"
                 aria-expanded={isResourcesDropdownOpen || isMobileResourcesOpen}
+                aria-label="Resources navigation menu"
               >
                 Resources
                 <span className="chevron" aria-hidden="true">
@@ -415,7 +418,7 @@ const Navbar = () => {
             <Link to="/pricing" className="nav-link">Pricing</Link>
           </div>
           <div className="nav-buttons">
-            <button className="btn btn-primary">Get started for FREE</button>
+            <button className="btn btn-primary" aria-label="Get started for free with Smartr365">Get started for FREE</button>
           </div>
           <button 
             className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`}
@@ -431,7 +434,7 @@ const Navbar = () => {
         {/* Mobile menu overlay */}
         <div className={`mobile-menu-overlay ${isMobileMenuOpen ? 'active' : ''}`}>
           <div className="mobile-menu-content">
-            <nav className="mobile-nav">
+            <nav className="mobile-nav" role="navigation" aria-label="Mobile navigation">
               {/* Mobile Platform expandable section */}
               <button
                 type="button"
@@ -439,6 +442,7 @@ const Navbar = () => {
                 onClick={() => setIsMobilePlatformOpen((v) => !v)}
                 aria-controls="mobile-platform-panel"
                 aria-expanded={isMobilePlatformOpen}
+                aria-label="Platform mobile navigation menu"
               >
                 Platform
                 <span className="chevron" aria-hidden="true">
@@ -451,9 +455,9 @@ const Navbar = () => {
                 <div id="mobile-platform-panel" className="mobile-submenu">
                   <div className="mobile-submenu-section">
                     <div className="mobile-submenu-header">Product</div>
-                    <button className="mobile-submenu-item" onClick={closeMobileMenu}>Product Analytics</button>
-                    <button className="mobile-submenu-item" onClick={closeMobileMenu}>Web Analytics</button>
-                    <button className="mobile-submenu-item" onClick={closeMobileMenu}>Mobile Analytics</button>
+                    <button className="mobile-submenu-item" onClick={closeMobileMenu} aria-label="Product Analytics">Product Analytics</button>
+                    <button className="mobile-submenu-item" onClick={closeMobileMenu} aria-label="Web Analytics">Web Analytics</button>
+                    <button className="mobile-submenu-item" onClick={closeMobileMenu} aria-label="Mobile Analytics">Mobile Analytics</button>
                     <button className="mobile-submenu-item" onClick={closeMobileMenu}>Metric Trees</button>
                     <button className="mobile-submenu-item" onClick={closeMobileMenu}>Warehouse Connectors</button>
                     <button className="mobile-submenu-item" onClick={closeMobileMenu}>Session Replay</button>
@@ -476,6 +480,7 @@ const Navbar = () => {
                 onClick={() => setIsMobileSolutionsOpen((v) => !v)}
                 aria-controls="mobile-solutions-panel"
                 aria-expanded={isMobileSolutionsOpen}
+                aria-label="Solutions mobile navigation menu"
               >
                 Solutions
                 <span className="chevron" aria-hidden="true">
@@ -504,6 +509,7 @@ const Navbar = () => {
                 onClick={() => setIsMobileResourcesOpen((v) => !v)}
                 aria-controls="mobile-resources-panel"
                 aria-expanded={isMobileResourcesOpen}
+                aria-label="Resources mobile navigation menu"
               >
                 Resources
                 <span className="chevron" aria-hidden="true">

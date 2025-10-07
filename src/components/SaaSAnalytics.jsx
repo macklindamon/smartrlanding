@@ -350,6 +350,7 @@ export const WhyBrokersLoveSmartr = () => {
                     key={index}
                     className={`minimap-dot ${index === carouselIndex ? 'active' : ''}`}
                     onClick={() => goToSlide(index)}
+                    aria-label={`Go to slide ${index + 1} of ${isMobile ? imageUrls.length : imageUrls.length - 1}`}
                   />
                 ))}
               </div>

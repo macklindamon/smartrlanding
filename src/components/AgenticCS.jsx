@@ -114,7 +114,7 @@ const AgenticCS = () => {
              Never miss tasks. Realtime mortgage assistant boosting efficiency and revenue.
             </p>
             <div class="section-buttons">
-            <button className="btn btn-primary">
+            <button className="btn btn-primary" aria-label="Explore AI Agents for mortgage automation">
               Explore AI Agents
             </button>
             </div>

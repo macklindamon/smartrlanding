@@ -39,7 +39,7 @@ const Pricing = () => {
           <p className="pricing-description">
             Start today, no credit card required.
           </p>
-          <button className="try-free-btn">
+          <button className="try-free-btn" aria-label="Try Smartr365 for free - no credit card required">
             Try for Free
           </button>
         </div>
@@ -264,7 +264,7 @@ const Pricing = () => {
                 <span className="contact-text">Contact us for pricing</span>
               </div>
             </div>
-            <button className="plan-button contact-sales-btn">
+            <button className="plan-button contact-sales-btn" aria-label="Contact sales for enterprise pricing">
               Contact Sales
             </button>
             

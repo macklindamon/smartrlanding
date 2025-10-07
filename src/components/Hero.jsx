@@ -46,8 +46,8 @@ const Hero = () => {
             </p>
             
             <div className="button-group">
-              <button className="btn btn-primary btn-large">Get started for FREE</button>
-              <button className="btn btn-secondary btn-large">Book a demo</button>
+              <button className="btn btn-primary btn-large" aria-label="Get started with Smartr365 for free">Get started for FREE</button>
+              <button className="btn btn-secondary btn-large" aria-label="Book a demo with Smartr365">Book a demo</button>
             </div>
           </div>
           
