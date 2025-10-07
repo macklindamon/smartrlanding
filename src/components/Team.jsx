@@ -7,7 +7,7 @@ const Team = () => {
     <><section className="team-page">
       <div className="page-hero">
         <div className="page-hero-container">
-          <h1 class="page-hero-title">Meet the team</h1>
+          <h1 className="page-hero-title">Meet the team</h1>
           <p class="page-hero-description">Our awesome team made up of talented individuals</p>
         </div>
       </div>

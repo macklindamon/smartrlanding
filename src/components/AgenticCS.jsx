@@ -129,9 +129,9 @@ const AgenticCS = () => {
               <img src="/img/placeholder.png" alt="HomeBuyer interface" />
             </div>
             <img src="/img/homebuyer-icon.svg" alt="SmartrConnect interface" className="smartr-connect-icon" />
-            <h2 className="platform-card-title">
+            <h3 className="platform-card-title">
               Client app
-            </h2>
+            </h3>
             <p className="platform-card-description">
               Guide first-time buyers and movers from affordability through to completion. Smartr365's HomeBuyer experience brings clarity, reassurance and simple digital tools that support every step towards owning a home.
             </p>
@@ -151,9 +151,9 @@ const AgenticCS = () => {
               {/* Lender images removed */}
             </div>
             <img src="/img/smartr-connect-icon.svg" alt="SmartrConnect interface" className="smartr-connect-icon" />
-            <h2 className="platform-card-title">
+            <h3 className="platform-card-title">
               Top tier lenders
-            </h2>
+            </h3>
                         <p className="platform-card-description">
               Connect to 60+ lenders instantly.
             </p>

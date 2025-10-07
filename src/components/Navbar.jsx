@@ -228,7 +228,7 @@ const Navbar = () => {
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown-section-header">
-                          <h3 className="dropdown-section-title">Platform</h3>
+                          <span className="dropdown-section-title">Platform</span>
                         </div>
                         <Link to="/platform/smartrconnect" className="dropdown-item">
                           <div className="dropdown-item-title">SmartrConnect <span className="dropdown-arrow">›</span></div>
@@ -252,7 +252,7 @@ const Navbar = () => {
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown-section-header">
-                          <h3 className="dropdown-section-title">&nbsp;</h3>
+                          <span className="dropdown-section-title">&nbsp;</span>
                         </div>
                         <Link to="/platform/introducer-portal" className="dropdown-item">
                           <div className="dropdown-item-title">Introducer portal <span className="dropdown-arrow">›</span></div>
@@ -278,7 +278,7 @@ const Navbar = () => {
                         <div className="dropdown-card-header">
                           <span className="dropdown-card-badge">New update</span>
                         </div>
-                        <h4 className="dropdown-card-title">Introducing Agentic CS</h4>
+                        <span className="dropdown-card-title">Introducing Agentic CS</span>
                         <p className="dropdown-card-para">Real-time mortgage tracking with alerts on tasks and opportunities</p>
                         <a href="#" className="dropdown-card-link dropdown-learn-more">
                           Learn more
@@ -334,7 +334,7 @@ const Navbar = () => {
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown-section-header">
-                          <h3 className="dropdown-section-title">Solutions</h3>
+                          <span className="dropdown-section-title">Solutions</span>
                         </div>
                         <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Advisers <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Comprehensive tools for mortgage advisers</div></a>
                         <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Admins <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Streamline administrative processes</div></a>
@@ -345,7 +345,7 @@ const Navbar = () => {
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown-section-header" style={{visibility:'hidden'}}>
-                          <h3 className="dropdown-section-title">Solutions</h3>
+                          <span className="dropdown-section-title">Solutions</span>
                         </div>
                         <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Homebuyers <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Tools to help homebuyers navigate mortgages</div></a>
                         <a href="#" className="dropdown-item"><div className="dropdown-item-title">For Estate Agents <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Integrate mortgage services seamlessly</div></a>
@@ -389,7 +389,7 @@ const Navbar = () => {
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown-section-header">
-                          <h3 className="dropdown-section-title">Resources</h3>
+                          <span className="dropdown-section-title">Resources</span>
                         </div>
                         <Link to="/case-studies" className="dropdown-item"><div className="dropdown-item-title">Case Studies <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Real-world success stories.</div></Link>
                         <Link to="/campaigns/bucket-list/" className="dropdown-item"><div className="dropdown-item-title">Videos <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Watch our latest content</div></Link>
@@ -400,7 +400,7 @@ const Navbar = () => {
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown-section-header" style={{visibility:'hidden'}}>
-                          <h3 className="dropdown-section-title">Resources</h3>
+                          <span className="dropdown-section-title">Resources</span>
                         </div>
                         <a href="https://support.smartr365.com/" target="_blank" rel="noopener noreferrer" className="dropdown-item"><div className="dropdown-item-title">Help Center <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Get support and guidance</div></a>
                         <a href="https://api.smartr365.com/" target="_blank" rel="noopener noreferrer" className="dropdown-item"><div className="dropdown-item-title">API Docs <span className="dropdown-arrow">›</span></div><div className="dropdown-item-desc">Developer API documentation</div></a>

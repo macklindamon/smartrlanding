@@ -4586,7 +4586,7 @@ input:checked + .toggle-label .toggle-slider {
 
 .app-activity {
     font-size: 12px;
-    color: #94a3b8;
+    color: var(--color-text-muted);
 }
 
 /* Content Panel */
@@ -6709,7 +6709,7 @@ input:checked + .toggle-label .toggle-slider {
 
 .case-study-read-time {
     font-size: 0.875rem;
-    color: #9ca3af;
+    color: var(--color-text-muted);
     font-weight: 500;
 }
 
@@ -8490,7 +8490,7 @@ input:checked + .toggle-label .toggle-slider {
 }
 
 .quote-word {
-  color: #d1d5db;
+  color: var(--color-text-muted);
   transition: color 0.4s ease;
 }
 

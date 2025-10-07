@@ -14,7 +14,7 @@ const Footer = () => {
 
           <div className="footer-columns">
             <div className="footer-col">
-              <h4 className="footer-heading">Quick links</h4>
+              <h3 className="footer-heading">Quick links</h3>
               <ul className="footer-links">
                 <li><a className="footer-link" href="#platform">Platform</a></li>
                 <li><a className="footer-link" href="#solutions">Solutions</a></li>
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-col">
-              <h4 className="footer-heading">Legal</h4>
+              <h3 className="footer-heading">Legal</h3>
               <ul className="footer-links">
                 <li><Link className="footer-link" to="/terms">Terms & Conditions</Link></li>
                 <li><Link className="footer-link" to="/privacy">Privacy Policy</Link></li>
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-col">
-              <h4 className="footer-heading">Follow us</h4>
+              <h3 className="footer-heading">Follow us</h3>
               <nav aria-label="Social media links">
                 <ul className="footer-links social">
                 <li>

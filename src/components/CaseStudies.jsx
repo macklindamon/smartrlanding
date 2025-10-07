@@ -33,7 +33,7 @@ const CaseStudies = () => {
                 </div>
                 
                 <div className="case-study-content">
-                  <h3 className="case-study-title">{study.title}</h3>
+                  <h2 className="case-study-title">{study.title}</h2>
                   <p className="case-study-description">
                     {study.shortDescription}
                   </p>
